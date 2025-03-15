@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+.bio-section {
+    animation: fadeIn 1s ease-in-out;
+}
+.image-section img {
+    animation: slideIn 1.2s ease-in-out;
+}
+.social-links a {
+    transition: transform 0.3s ease-in-out;
+}
+.social-links a:hover {
+    transform: scale(1.2);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 300px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Social Media Colors */
+.youtube { background: linear-gradient(90deg, #FF0000, #cc0000); }
+.twitter { background: linear-gradient(90deg, #1DA1F2, #0d81c6); }
+.linkedin { background: linear-gradient(90deg, #0077B5, #005582); }
+.whatsapp { background: linear-gradient(90deg, #25D366, #1aa34a); }
+
+/* Typing Effect */
+.typing-effect {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: white;
+    margin-left: 3px;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% { background: transparent; }
+}
